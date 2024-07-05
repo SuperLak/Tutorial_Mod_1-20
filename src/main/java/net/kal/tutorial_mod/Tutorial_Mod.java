@@ -2,6 +2,7 @@ package net.kal.tutorial_mod;
 
 import com.mojang.logging.LogUtils;
 import net.kal.tutorial_mod.item.ModItems;
+import net.kal.tutorial_mod.misc.ModCreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,6 +29,7 @@ public class Tutorial_Mod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // where the components of the mod are registered
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
