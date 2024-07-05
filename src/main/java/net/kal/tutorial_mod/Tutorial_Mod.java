@@ -21,7 +21,7 @@ public class Tutorial_Mod {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "tutorial_mod";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
 
     public Tutorial_Mod() {
