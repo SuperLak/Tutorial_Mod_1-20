@@ -19,6 +19,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creative_tab.tutorial_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.GEM.get());
+                        pOutput.accept(ModItems.RAW_GEM.get());
                     })
                     .build());
 

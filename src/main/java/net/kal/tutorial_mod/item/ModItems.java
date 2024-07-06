@@ -13,6 +13,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> GEM =
             ITEMS.register("gem", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_GEM =
+            ITEMS.register("raw_gem", () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {
