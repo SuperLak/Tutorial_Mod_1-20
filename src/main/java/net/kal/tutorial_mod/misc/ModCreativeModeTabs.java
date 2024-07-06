@@ -1,6 +1,7 @@
 package net.kal.tutorial_mod.misc;
 
 import net.kal.tutorial_mod.Tutorial_Mod;
+import net.kal.tutorial_mod.block.ModBlocks;
 import net.kal.tutorial_mod.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -18,8 +19,12 @@ public class ModCreativeModeTabs {
             "tutorial_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.GEM.get()))
                     .title(Component.translatable("creative_tab.tutorial_tab"))
                     .displayItems((pParameters, pOutput) -> {
+                        // adding items to the creative mode tab
                         pOutput.accept(ModItems.GEM.get());
                         pOutput.accept(ModItems.RAW_GEM.get());
+
+                        // adding blocks to the creative mode tab
+                        pOutput.accept(ModBlocks.GEM_BLOCK.get());
                     })
                     .build());
 

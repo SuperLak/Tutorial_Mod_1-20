@@ -1,6 +1,7 @@
 package net.kal.tutorial_mod;
 
 import com.mojang.logging.LogUtils;
+import net.kal.tutorial_mod.block.ModBlocks;
 import net.kal.tutorial_mod.item.ModItems;
 import net.kal.tutorial_mod.misc.ModCreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,6 +32,7 @@ public class Tutorial_Mod {
         // where the components of the mod are registered
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
