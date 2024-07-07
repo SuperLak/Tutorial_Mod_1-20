@@ -1,6 +1,9 @@
 {
   "values": [
     "tutorial_mod:gem_block",
-    "tutorial_mod:gem_ore"
+    "tutorial_mod:gem_ore",
+    "tutorial_mod:deepslate_gem_ore",
+    "tutorial_mod:nether_gem_ore",
+    "tutorial_mod:end_stone_gem_ore"
   ]
 }
