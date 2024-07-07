@@ -25,7 +25,7 @@ public class ModCreativeModeTabs {
 
                         // adding blocks to the creative mode tab
                         pOutput.accept(ModBlocks.GEM_BLOCK.get());
-                        pOutput.accept(ModBlocks.ENERGY_BLOCK.get());
+                        pOutput.accept(ModBlocks.GEM_ORE.get());
                     })
                     .build());
 

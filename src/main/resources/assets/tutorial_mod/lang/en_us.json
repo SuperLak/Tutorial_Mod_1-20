@@ -3,7 +3,8 @@
   "item.tutorial_mod.raw_gem": "Raw Gem",
 
   "block.tutorial_mod.gem_block": "Block of Gem",
-  "block.tutorial_mod.energy_block": "Block of Energy",
+  "block.tutorial_mod.gem_ore": "Gem Ore",
+
 
   "creative_tab.tutorial_tab": "Tutorial Tab"
 }
