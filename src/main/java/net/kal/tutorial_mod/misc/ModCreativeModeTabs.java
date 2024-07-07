@@ -32,6 +32,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.DEEPSLATE_GEM_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_GEM_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_GEM_ORE.get());
+
+                        pOutput.accept(ModBlocks.SOUND_BLOCk.get());
                     })
                     .build());
 

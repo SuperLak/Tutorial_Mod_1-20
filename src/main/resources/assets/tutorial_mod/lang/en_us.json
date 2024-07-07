@@ -11,6 +11,8 @@
   "block.tutorial_mod.nether_gem_ore": "Nether Gem Ore",
   "block.tutorial_mod.end_stone_gem_ore": "End Stone Gem Ore",
 
+  "block.tutorial_mod.sound_block": "Sound Block",
+
 
   "creative_tab.tutorial_tab": "Tutorial Tab"
 }

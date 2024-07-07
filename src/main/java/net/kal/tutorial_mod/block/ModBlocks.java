@@ -1,6 +1,7 @@
 package net.kal.tutorial_mod.block;
 
 import net.kal.tutorial_mod.Tutorial_Mod;
+import net.kal.tutorial_mod.block.custom.SoundBlock;
 import net.kal.tutorial_mod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -20,6 +21,7 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Tutorial_Mod.MOD_ID);
+
 
     public static final RegistryObject<Block> GEM_BLOCK = registerBlock("gem_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST_CLUSTER)));
@@ -48,15 +50,23 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.AMETHYST)));
 
+
+    public static final RegistryObject<Block> SOUND_BLOCk = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
+                    .sound(SoundType.AMETHYST_CLUSTER)));
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
 
+
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
+
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
