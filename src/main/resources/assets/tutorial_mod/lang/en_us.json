@@ -2,6 +2,8 @@
   "item.tutorial_mod.gem": "Gem",
   "item.tutorial_mod.raw_gem": "Raw Gem",
 
+  "item.tutorial_mod.metal_detector": "Metal Detector",
+
   "block.tutorial_mod.gem_block": "Block of Gem",
   "block.tutorial_mod.gem_ore": "Gem Ore",
   "block.tutorial_mod.deepslate_gem_ore": "Deepslate Gem Ore",

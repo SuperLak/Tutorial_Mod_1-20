@@ -23,6 +23,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.GEM.get());
                         pOutput.accept(ModItems.RAW_GEM.get());
 
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
+
                         // adding blocks to the creative mode tab
                         pOutput.accept(ModBlocks.GEM_BLOCK.get());
                         pOutput.accept(ModBlocks.GEM_ORE.get());
