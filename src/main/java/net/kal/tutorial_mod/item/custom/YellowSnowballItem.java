@@ -30,7 +30,7 @@ public class YellowSnowballItem extends Item implements ProjectileItem {
             pPlayer.getY(),
             pPlayer.getZ(),
             SoundEvents.SNOWBALL_THROW,
-            SoundSource.NEUTRAL,
+            SoundSource.PLAYERS,
             0.5F,
             0.4F / (pLevel.getRandom().nextFloat() * 0.4F + 0.8F)
         );
